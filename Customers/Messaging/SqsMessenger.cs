@@ -28,7 +28,7 @@ public class SqsMessenger : ISqsMessenger
                     "MessageType", new MessageAttributeValue
                     {
                         DataType = "String",
-                        StringValue = typeof(T).ToString()
+                        StringValue = typeof(T).Name
                     }
                 }
             },
