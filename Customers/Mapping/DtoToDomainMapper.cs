@@ -30,9 +30,9 @@ public static class DtoToDomainMapper
         };
     }
     
-    public static MerchantCreated ToMerchantUpdated(this CustomerDto customerDto)
+    public static MerchantUpdated ToMerchantUpdated(this CustomerDto customerDto)
     {
-        return new MerchantCreated()
+        return new MerchantUpdated()
         {
             Id = customerDto.Id,
             EmailAddress= customerDto.Email,
